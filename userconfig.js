@@ -3,7 +3,7 @@ let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: 'Kyiv, Ukraine',
+    location: "Kyiv, Ukraine",
     scale: "C",
   },
   clock: {
@@ -83,7 +83,7 @@ const default_config = {
             name: "hdrezka+",
             url: "https://rezka-ua.org/",
             icon: "hdr",
-            icon_color: "#xfa7b;",
+            icon_color: "#fa7b5c;",
           },
         ],
       }],
