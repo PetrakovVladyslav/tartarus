@@ -1,10 +1,18 @@
-let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
+let saved_config;
+
+try {
+  saved_config = JSON.parse(localStorage.getItem("CONFIG"));
+} catch (e) {
+  console.warn("Invalid CONFIG in localStorage. Using default_config.");
+  saved_config = null;
+  localStorage.removeItem("CONFIG");
+}
 
 const default_config = {
   overrideStorage: true,
   temperature: {
     location: "Kyiv, Ukraine",
-    scale: "C",
+    scale: "C"
   },
   clock: {
     format: "h:i p",
@@ -83,7 +91,7 @@ const default_config = {
             name: "hdrezka+",
             url: "https://rezka-ua.org/",
             icon: "hdr",
-            icon_color: "#fa7b5c;",
+            icon_color: "#fa7b5c",
           },
         ],
       }],
@@ -304,14 +312,13 @@ const default_config = {
   ],
 };
 
-const CONFIG = new Config(saved_config ?? default_config);
-// const CONFIG = new Config(default_config);
+window.CONFIG = new Config(saved_config ?? default_config);
 
 (function() {
   var css = document.createElement('link');
   css.href = 'src/css/tabler-icons.min.css';
   css.rel = 'stylesheet';
   css.type = 'text/css';
-  if (!CONFIG.config.localIcons)
+  if (!window.CONFIG.config.localIcons)
     document.getElementsByTagName('head')[0].appendChild(css);
 })();
