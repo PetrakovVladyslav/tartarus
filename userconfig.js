@@ -47,7 +47,7 @@ const default_config = {
         "q": "config-tab"
     },
     "disabled": [],
-    "localIcons": true,
+    "localIcons": false,
     "fastlink": "https://chat.openai.com/",
     "openLastVisitedTab": true,
     "tabs": [
@@ -230,6 +230,12 @@ const default_config = {
                             "name": "gitlab",
                             "url": "https://gitlab.com/",
                             "icon": "brand-gitlab",
+                            "icon_color": "#e78a4e"
+                        },
+                        {
+                            "name": "draw.io",
+                            "url": "https://app.diagrams.net/?src=about",
+                            "icon": "IconDragDrop2",
                             "icon_color": "#e78a4e"
                         }
                     ]
