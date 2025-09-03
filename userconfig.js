@@ -44,6 +44,7 @@ const default_config = {
     },
     "keybindings": {
         "s": "search-bar",
+        "ы": "search-bar",
         "q": "config-tab"
     },
     "disabled": [],
