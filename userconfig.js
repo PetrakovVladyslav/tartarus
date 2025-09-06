@@ -321,7 +321,7 @@ const default_config = {
             ]
         }
     ]
-};
+}
  const CONFIG = new Config(saved_config ?? default_config);
 //const CONFIG = new Config(default_config);
 
