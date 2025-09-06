@@ -198,7 +198,7 @@ const default_config = {
                         {
                             "name": "draw.io",
                             "url": "https://app.diagrams.net/?src=about",
-                            "icon": "sitemap",
+                            "icon": "schema",
                             "icon_color": "#e78a4e"
                         }, 
                        {
