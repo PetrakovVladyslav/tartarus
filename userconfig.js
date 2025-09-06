@@ -60,12 +60,6 @@ const default_config = {
                     "name": "Social Media",
                     "links": [
                         {
-                            "name": "whatsapp",
-                            "url": "https://web.whatsapp.com/",
-                            "icon": "brand-whatsapp",
-                            "icon_color": "#a9b665"
-                        },
-                        {
                             "name": "twitter",
                             "url": "https://twitter.com/home",
                             "icon": "brand-twitter-filled",
@@ -95,41 +89,17 @@ const default_config = {
                     "name": "Games",
                     "links": [
                         {
-                            "name": "chess",
-                            "url": "https://www.chess.com/home",
-                            "icon": "chess-queen-filled",
-                            "icon_color": "#a9b665"
-                        },
-                        {
                             "name": "monkeytype",
                             "url": "https://monkeytype.com/",
                             "icon": "keyboard",
                             "icon_color": "#e78a4e"
                         },
-                        {
-                            "name": "tetris",
-                            "url": "https://tetris.com/",
-                            "icon": "brand-apple-arcade",
-                            "icon_color": "#ea6962"
-                        }
-                    ]
+                             ]
                 },
                 {
                     "name": "Video",
                     "links": [
-                        {
-                            "name": "disney+",
-                            "url": "https://www.disneyplus.com/home",
-                            "icon": "brand-disney",
-                            "icon_color": "#7daea3"
-                        },
-                        {
-                            "name": "primevideo",
-                            "url": "https://www.primevideo.com/region/eu/?ref_=dv_web_unknown",
-                            "icon": "brand-amazon",
-                            "icon_color": "#7daea3"
-                        }
-                    ]
+                             ]
                 }
             ]
         },
@@ -236,8 +206,14 @@ const default_config = {
                         {
                             "name": "draw.io",
                             "url": "https://app.diagrams.net/?src=about",
-                            "icon": "IconDragDrop2",
+                            "icon": "IconPencilBolt",
                             "icon_color": "#e78a4e"
+                        }, 
+                       {
+                            "name": "sudo",
+                            "url": "https://sudoteach.com/course",
+                            "icon": "IconSchool",
+                            "icon_color": "#7daea3"
                         }
                     ]
                 },
