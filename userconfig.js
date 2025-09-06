@@ -1,12 +1,4 @@
-let saved_config;
-
-try {
-  saved_config = JSON.parse(localStorage.getItem("CONFIG"));
-} catch (e) {
-  console.warn("Invalid CONFIG in localStorage. Using default_config.");
-  saved_config = null;
-  localStorage.removeItem("CONFIG");
-}
+let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 
 const default_config = {
     "overrideStorage": true,
@@ -329,14 +321,15 @@ const default_config = {
             ]
         }
     ]
-}
-window.CONFIG = new Config(saved_config ?? default_config);
+};
+// const CONFIG = new Config(saved_config ?? default_config);
+const CONFIG = new Config(default_config);
 
 (function() {
   var css = document.createElement('link');
   css.href = 'src/css/tabler-icons.min.css';
   css.rel = 'stylesheet';
   css.type = 'text/css';
-  if (!window.CONFIG.config.localIcons)
+  if (!CONFIG.config.localIcons)
     document.getElementsByTagName('head')[0].appendChild(css);
 })();
