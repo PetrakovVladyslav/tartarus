@@ -198,13 +198,13 @@ const default_config = {
                         {
                             "name": "draw.io",
                             "url": "https://app.diagrams.net/?src=about",
-                            "icon": "schema",
+                            "icon": "sitemap",
                             "icon_color": "#e78a4e"
                         }, 
                        {
                             "name": "sudo",
                             "url": "https://sudoteach.com/course",
-                            "icon": "school",
+                            "icon": "robot",
                             "icon_color": "#7daea3"
                         }
                     ]
